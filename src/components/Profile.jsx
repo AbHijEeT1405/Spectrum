@@ -1,9 +1,10 @@
 import { useState } from "react";
 import { Pencil, LogOut, User } from "lucide-react";
+import profileImg from "../assets/S.jpg";
 
 export default function Profile() {
   const [username] = useState("User"); 
-  const [profilePic, setProfilePic] = useState("/S.png");
+  const [profilePic, setProfilePic] = useState(profileImg);
 
   const handleEditPhoto = () => {
     alert("Change profile photo clicked!");
